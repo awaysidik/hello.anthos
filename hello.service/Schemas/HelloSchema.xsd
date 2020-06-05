@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/HelloSchema" xmlns:tns="http://www.example.org/HelloSchema" elementFormDefault="qualified">
+
+    <element name="HelloRq" type="tns:helloString"></element>
+    
+    <simpleType name="helloString">
+    	<restriction base="string"></restriction>
+    </simpleType>
+
+    <simpleType name="hiString">
+    	<restriction base="string"></restriction>
+    </simpleType>
+
+    <element name="HelloRs" type="tns:hiString"></element>
+</schema>
